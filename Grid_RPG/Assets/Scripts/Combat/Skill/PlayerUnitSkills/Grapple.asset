@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5953660925001175672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e6900f5f67aad4c97ae6327078d8e3, type: 3}
+  m_Name: Predefined Single Target
+  m_EditorClassIdentifier: 
+  entitySkill: 0
+  horizontalOffset: 3
+  VerticalOffset: 0
+--- !u!114 &-5130952319835705705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd9347bf4bda0a4aa2b328e46ac6172, type: 3}
+  m_Name: Cast
+  m_EditorClassIdentifier: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98a6edb9a21c1e4ca32829208da5cfd, type: 3}
+  m_Name: Grapple
+  m_EditorClassIdentifier: 
+  description: "Atrae hacia la primera fila al objetivo con el que impacte, no hace
+    da\xF1o"
+  cost: {fileID: 4868184977226215870}
+  castEffect: {fileID: -5130952319835705705}
+  hitEffect: {fileID: 0}
+  moveEffect: {fileID: 2323999742960793458}
+  healEffect: {fileID: 0}
+  extraEffects: {fileID: 0}
+  targetPolicy: {fileID: -5953660925001175672}
+--- !u!114 &2323999742960793458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3e09556b294f0498de68c9c6bab935, type: 3}
+  m_Name: New Move Effect
+  m_EditorClassIdentifier: 
+  knockbackDireciton: 0
+  knockbackDistance: 5
+--- !u!114 &4868184977226215870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b648e6301c3764cbb353af873c2dd9, type: 3}
+  m_Name: Mana cost
+  m_EditorClassIdentifier: 
+  manaDrain: 6

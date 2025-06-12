@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9121773604699082443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6b0f06cbb4d1147a3a73f092b10117, type: 3}
+  m_Name: Hit
+  m_EditorClassIdentifier: 
+  damage: 5
+  damagesAllTargets: 0
+  entityTypeToDamage: 0
+--- !u!114 &-420001541971536741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e6900f5f67aad4c97ae6327078d8e3, type: 3}
+  m_Name: Predefined Single Target
+  m_EditorClassIdentifier: 
+  entitySkill: 1
+  horizontalOffset: -3
+  VerticalOffset: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98a6edb9a21c1e4ca32829208da5cfd, type: 3}
+  m_Name: Wind Slash
+  m_EditorClassIdentifier: 
+  description: "Da\xF1a una casilla dentro de la misma l\xEDnea, y lo arrastra dos
+    casillas hacia\r\nabajo. "
+  cost: {fileID: 1172473395143712025}
+  castEffect: {fileID: 787316421835033883}
+  hitEffect: {fileID: -9121773604699082443}
+  moveEffect: {fileID: 8450794110361075525}
+  healEffect: {fileID: 0}
+  extraEffects: {fileID: 0}
+  targetPolicy: {fileID: -420001541971536741}
+--- !u!114 &787316421835033883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd9347bf4bda0a4aa2b328e46ac6172, type: 3}
+  m_Name: Cast
+  m_EditorClassIdentifier: 
+--- !u!114 &1172473395143712025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b648e6301c3764cbb353af873c2dd9, type: 3}
+  m_Name: Mana cost
+  m_EditorClassIdentifier: 
+  manaDrain: 4
+--- !u!114 &8450794110361075525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3e09556b294f0498de68c9c6bab935, type: 3}
+  m_Name: New Move Effect
+  m_EditorClassIdentifier: 
+  knockbackDireciton: 3
+  knockbackDistance: 2

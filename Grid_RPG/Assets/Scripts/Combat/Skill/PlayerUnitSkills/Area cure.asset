@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98a6edb9a21c1e4ca32829208da5cfd, type: 3}
+  m_Name: Area cure
+  m_EditorClassIdentifier: 
+  description: "Cura a todos los compa\xF1eros que se encuentren en las casillas
+    frontales"
+  cost: {fileID: 1408918915820634016}
+  castEffect: {fileID: 1100216122186027551}
+  hitEffect: {fileID: 0}
+  moveEffect: {fileID: 0}
+  healEffect: {fileID: 5546871433592120384}
+  extraEffects: {fileID: 0}
+  targetPolicy: {fileID: 2246337703660758079}
+--- !u!114 &1100216122186027551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd9347bf4bda0a4aa2b328e46ac6172, type: 3}
+  m_Name: Cast
+  m_EditorClassIdentifier: 
+--- !u!114 &1408918915820634016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b648e6301c3764cbb353af873c2dd9, type: 3}
+  m_Name: Mana cost
+  m_EditorClassIdentifier: 
+  manaDrain: 5
+--- !u!114 &2246337703660758079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b061ab30d490a4894fe13ca54362b4, type: 3}
+  m_Name: Predefined Multiple Target
+  m_EditorClassIdentifier: 
+  area: 0
+  entitySkill: 0
+  numberOfTiles: 4
+  horizontalOffset: 1
+  VerticalOffset: 0
+--- !u!114 &5546871433592120384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a03eff65b63ad64d8fcd9ea95837afe, type: 3}
+  m_Name: heal
+  m_EditorClassIdentifier: 
+  healAmount: 2

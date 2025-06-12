@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1358516826632392503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a03eff65b63ad64d8fcd9ea95837afe, type: 3}
+  m_Name: heal
+  m_EditorClassIdentifier: 
+  healAmount: 1
+--- !u!114 &-203182342399957414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b648e6301c3764cbb353af873c2dd9, type: 3}
+  m_Name: Mana cost
+  m_EditorClassIdentifier: 
+  manaDrain: 8
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98a6edb9a21c1e4ca32829208da5cfd, type: 3}
+  m_Name: Column Cure
+  m_EditorClassIdentifier: 
+  description: ": Selecciona una columna y cura a todos los aliados que est\xE9n
+    en ella."
+  cost: {fileID: -203182342399957414}
+  castEffect: {fileID: 7515461552467774776}
+  hitEffect: {fileID: 0}
+  moveEffect: {fileID: 0}
+  healEffect: {fileID: -1358516826632392503}
+  extraEffects: {fileID: 0}
+  targetPolicy: {fileID: 8235033475827523438}
+--- !u!114 &7515461552467774776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd9347bf4bda0a4aa2b328e46ac6172, type: 3}
+  m_Name: Cast
+  m_EditorClassIdentifier: 
+--- !u!114 &8235033475827523438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ec3f5569b46b2d4791ad797fc6e7796, type: 3}
+  m_Name: New Column Or Row
+  m_EditorClassIdentifier: 
+  area: 1
+  entitySkill: 1

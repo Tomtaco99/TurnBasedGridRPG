@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6417259001729505242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6b0f06cbb4d1147a3a73f092b10117, type: 3}
+  m_Name: Hit
+  m_EditorClassIdentifier: 
+  damage: 3
+  damagesAllTargets: 0
+  entityTypeToDamage: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98a6edb9a21c1e4ca32829208da5cfd, type: 3}
+  m_Name: Poisonous floor
+  m_EditorClassIdentifier: 
+  description: "Selecciona una casilla y da\xF1a al enemigo."
+  cost: {fileID: 8433486572913697747}
+  castEffect: {fileID: 2932994980582346756}
+  hitEffect: {fileID: -6417259001729505242}
+  moveEffect: {fileID: 0}
+  healEffect: {fileID: 0}
+  extraEffects: {fileID: 0}
+  targetPolicy: {fileID: 3410022850211606413}
+--- !u!114 &2932994980582346756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd9347bf4bda0a4aa2b328e46ac6172, type: 3}
+  m_Name: Cast
+  m_EditorClassIdentifier: 
+--- !u!114 &3410022850211606413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc88bddc68a042d48bfe3d91069bbdc5, type: 3}
+  m_Name: Single Target
+  m_EditorClassIdentifier: 
+  targetSelf: 0
+  entitySkill: 0
+--- !u!114 &8433486572913697747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b648e6301c3764cbb353af873c2dd9, type: 3}
+  m_Name: Mana cost
+  m_EditorClassIdentifier: 
+  manaDrain: 6
